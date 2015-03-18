@@ -1,0 +1,37 @@
+!!! 5
+%html(lang="en-US")
+  %head
+    %title Austin Pet Stylist
+    %meta(charset="UTF-8")
+    %meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    = csrf_meta_tag
+    = stylesheet_link_tag "application"
+    = javascript_include_tag "application"
+    /
+    / * @license
+    / * MyFonts Webfont Build ID 2966209, 2015-02-04T19:13:19-0500
+    / *
+    / * The fonts listed in this notice are subject to the End User License
+    / * Agreement(s) entered into by the website owner. All other parties are
+    / * explicitly restricted from using the Licensed Webfonts(s).
+    / *
+    / * You may obtain a valid license at the URLs below.
+    / *
+    / * Webfont: ThirstyRoughReg by Yellow Design Studio
+    / * URL: http://www.myfonts.com/fonts/yellow-design/thirsty-rough/regular/
+    / * Copyright: Copyright (c) 2012 by Yellow Design Studio. All rights reserved.
+    / * Licensed pageviews: 500,000
+    / *
+    / *
+    / * License: http://www.myfonts.com/viewlicense?type=web&amp;buildid=2966209
+    / *
+    / * © 2015 MyFonts Inc
+    / */
+  %body
+    %header
+      = render 'shared/header'
+    %section.content.clearfix
+      = render 'shared/slider'
+      = yield
+    %footer
+      = render 'shared/footer'

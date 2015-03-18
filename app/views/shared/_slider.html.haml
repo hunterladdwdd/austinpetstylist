@@ -1,0 +1,44 @@
+%section#slider-wrapper.row
+  %section#carousel-example-generic.carousel.slide{"data-ride" => "carousel"}
+    / Indicators
+    %ol.carousel-indicators
+      %li.active{"data-slide-to" => "0", "data-target" => "#carousel-example-generic"}
+      %li{"data-slide-to" => "1", "data-target" => "#carousel-example-generic"}
+      %li{"data-slide-to" => "2", "data-target" => "#carousel-example-generic"}
+    / Wrapper for slides
+    #slider.carousel-inner{:role => "listbox"}
+      .item.active
+        %img{:alt => "Check out this active image!", :src => "/assets/slider-1.png"}
+          .carousel-caption
+            %h1 
+              %span.pink Look 
+              at this ball of 
+              %span.pink fluff!
+            %h2 
+              Call 
+              %span.pink now 
+              for an appointment!
+            %h1.huge
+              %span (
+              512
+              %span )
+              200
+              %span -
+              4229 
+      .item
+        %img{:alt => "This one starts to be inactive!", :src => "/assets/slider-2.png"}
+          .carousel-caption
+            %h1 OMG it's incredible!
+            %h2 (512) 222-3456
+      .item
+        %img{:alt => "This is the third one!", :src => "/assets/slider-3.png"}
+          .carousel-caption
+            %h1 Get your dog's butt glands checked!
+            %h2 Or yours, but it will cost extra!
+    / Controls
+    %a.left.carousel-control{"data-slide" => "prev", :href => "#carousel-example-generic", :role => "button"}
+      %span.glyphicon.glyphicon-chevron-left{"aria-hidden" => "true"}
+      %span.sr-only Previous
+    %a.right.carousel-control{"data-slide" => "next", :href => "#carousel-example-generic", :role => "button"}
+      %span.glyphicon.glyphicon-chevron-right{"aria-hidden" => "true"}
+      %span.sr-only Next

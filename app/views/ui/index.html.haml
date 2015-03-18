@@ -1,0 +1,9 @@
+%section.row#ui-wrapper
+  .up-separator
+    = image_tag("shadow_up.png")
+  %section.ui-index
+    %ul
+      - Dir.glob('app/views/ui/*.html.haml').sort.each do |file|
+        - wireframe = File.basename(file,'.html.haml')
+        -  unless wireframe == 'index' || wireframe.match(/^_/)
+          %li= link_to wireframe.titleize, action: wireframe unless wireframe == 'index' 

@@ -1,0 +1,21 @@
+%section#top-header.row
+  %section#header-logo
+    %h1
+      = link_to image_tag("austinpetstylist_logo.png"), root_path
+  %section#social-media
+    %ul
+      %li
+        %a{:href => "https://www.facebook.com/austinpetstylist?ref=br_tf"}
+          %img{:src => "/assets/facebook_logo.png"}
+      %li
+        %a{:href => "https://twitter.com/atxpetstylist"}
+          %img{:src => "/assets/twitter_logo.png"}
+  %ul#header-nav.nav.nav-pills
+    %li= link_to "Services", services_path
+    %li= link_to "About Us", about_us_path
+    %li= link_to "VIP Rewards", vip_rewards_path
+    %li= link_to "Policies", policies_path
+    %li= link_to "Resources", resources_path
+    %li= link_to "Contact", contact_path
+  .down-separator
+    = image_tag("shadow_down.png")
