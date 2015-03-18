@@ -17,7 +17,7 @@ module Austinpetstylist
     end
 
     # Add the fonts path
-    config.assets.paths << Rails.root.jpin('app', 'assets', 'MyWebFonts')
+    config.assets.paths << Rails.root.join('app', 'assets', 'MyWebFonts')
 
     # Precompile additional assets
     config.assets.precompile += %w( .svg .eot .woff .ttf )
