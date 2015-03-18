@@ -9,7 +9,7 @@
           = image_tag asset_path("facebook_logo.png")
       %li
         %a{:href => "https://twitter.com/atxpetstylist"}
-          %img{:src => "/assets/twitter_logo.png"}
+          = image_tag asset_path("twitter_logo.png")
   %ul#header-nav.nav.nav-pills
     %li= link_to "Services", services_path
     %li= link_to "About Us", about_us_path
