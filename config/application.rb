@@ -15,5 +15,11 @@ module Austinpetstylist
       g.orm :active_record
       g.template_engine :haml
     end
+
+    # Add the fonts path
+    config.assets.paths << Rails.root.jpin('app', 'assets', 'MyWebFonts')
+
+    # Precompile additional assets
+    config.assets.precompile += %w( .svg .eot .woff .ttf )
   end
 end
