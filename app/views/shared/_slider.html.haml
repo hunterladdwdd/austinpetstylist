@@ -8,7 +8,7 @@
     / Wrapper for slides
     #slider.carousel-inner{:role => "listbox"}
       .item.active
-        = image_tag asset_path("slider-1.png"), :alt => "Check out this active image!"
+        = image_tag("slider-1.png", :alt => "Woot!")
           .carousel-caption
             %h1 
               %span.pink Look 
@@ -26,12 +26,12 @@
               %span -
               4229 
       .item
-        = image_tag asset_path("slider-2.png"), :alt => "Check out this active image!"
+        = image_tag("slider-2.png", :alt => "Woot woot!")
           .carousel-caption
             %h1 OMG it's incredible!
             %h2 (512) 222-3456
       .item
-        = image_tag asset_path("slider-3.png"), :alt => "Check out this active image!"
+        = image_tag("slider-3.png", :alt => "Woot woot!")
           .carousel-caption
             %h1 Get your dog's butt glands checked!
             %h2 Or yours, but it will cost extra!
