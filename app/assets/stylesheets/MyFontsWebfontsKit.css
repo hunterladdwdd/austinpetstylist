@@ -26,10 +26,10 @@
   
 @font-face {
   font-family: 'ThirstyRoughReg'; 
-  src: font-url('webfonts/2D42C1_0_0.eot'); 
-  src: font-url('webfonts/2D42C1_0_0.eot?#iefix') format('embedded-opentype'),
-    font-url('webfonts/2D42C1_0_0.woff2') format('woff2'),
-    font-url('webfonts/2D42C1_0_0.woff') format('woff'),
-    font-url('webfonts/2D42C1_0_0.ttf') format('truetype');
+  src: url('webfonts/2D42C1_0_0.eot'); 
+  src: url('webfonts/2D42C1_0_0.eot?#iefix') format('embedded-opentype'),
+    url('webfonts/2D42C1_0_0.woff2') format('woff2'),
+    url('webfonts/2D42C1_0_0.woff') format('woff'),
+    url('webfonts/2D42C1_0_0.ttf') format('truetype');
   }
  
