@@ -11,6 +11,7 @@ module Austinpetstylist
     config.active_support.escape_html_entities_in_json = true
 
     config.assets.enabled = true
+    config.assets.paths << Rails.root.join('app', 'assets', 'webfonts')
     config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
     config.generators do |g|
       g.orm :active_record
