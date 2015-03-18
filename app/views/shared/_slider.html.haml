@@ -8,33 +8,33 @@
     / Wrapper for slides
     #slider.carousel-inner{:role => "listbox"}
       .item.active
-        %image{:src => "slider-1.png", :alt => "Some alt!"}
-          .carousel-caption
-            %h1 
-              %span.pink Look 
-              at this ball of 
-              %span.pink fluff!
-            %h2 
-              Call 
-              %span.pink now 
-              for an appointment!
-            %h1.huge
-              %span (
-              512
-              %span )
-              200
-              %span -
-              4229 
+        = image_tag("slider-1.png")
+        .carousel-caption
+          %h1 
+            %span.pink Look 
+            at this ball of 
+            %span.pink fluff!
+          %h2 
+            Call 
+            %span.pink now 
+            for an appointment!
+          %h1.huge
+            %span (
+            512
+            %span )
+            200
+            %span -
+            4229 
       .item
-        %image{:src => "slider-2.png", :alt => "Some alt!"}
-          .carousel-caption
-            %h1 OMG it's incredible!
-            %h2 (512) 222-3456
+        = image_tag("slider-2.png")
+        .carousel-caption
+          %h1 OMG it's incredible!
+          %h2 (512) 222-3456
       .item
-        %image{:src => "slider-3.png", :alt => "Some alt!"}
-          .carousel-caption
-            %h1 Get your dog's butt glands checked!
-            %h2 Or yours, but it will cost extra!
+        = image_tag("slider-3.png")
+        .carousel-caption
+          %h1 Get your dog's butt glands checked!
+          %h2 Or yours, but it will cost extra!
     / Controls
     %a.left.carousel-control{"data-slide" => "prev", :href => "#carousel-example-generic", :role => "button"}
       %span.glyphicon.glyphicon-chevron-left{"aria-hidden" => "true"}
