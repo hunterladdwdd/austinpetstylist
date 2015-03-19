@@ -1,5 +1,7 @@
 class PagesController < ApplicationController
-  def home; end
+  def home
+    @testimonials = Testimonial.all
+  end
 
   def services; end
 

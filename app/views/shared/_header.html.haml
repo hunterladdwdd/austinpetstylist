@@ -2,6 +2,12 @@
   %section#header-logo
     %h1
       = link_to image_tag("austinpetstylist_logo.png"), root_path
+  %ul#admin_menu.nav
+    - if !logged_in?
+      %li= link_to "Log In", sign_in_path
+    - if logged_in?
+      %li= link_to "Create Testimonial", new_testimonial_path
+      %li= link_to "Log Out", sign_out_path
   %section#social-media
     %ul
       %li

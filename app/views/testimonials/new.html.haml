@@ -1,0 +1,26 @@
+%section#testimonial.row
+  .up-separator
+    = image_tag("shadow_up.png")
+  %section#testimonial-content
+    %section.testimonial_wrapper.corner-shadow
+      %article
+        = bootstrap_form_tag url: testimonials_path, class: "testimonial" do
+          %header
+            %h1 Create Testimonial
+          %fieldset
+            .form-group
+              = label_tag :body, "What did they say?"
+              .row
+                .col-sm-8
+                  = text_area_tag :body, nil, class: "form-control", rows: 10
+            .form-group
+              = label_tag :client, "Which client said it?"
+              .row
+                .col-sm-4
+                  = text_field_tag :client, nil, class: "form-control"
+          %fieldset.form-group.action
+            = submit_tag "Create Testimonial", class: "btn btn-default"
+    .up-separator
+      = image_tag("shadow_up.png")
+
+

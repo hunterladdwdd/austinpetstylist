@@ -44,24 +44,12 @@
   %section#testimonials.col-md-9
     %header
       %h1 What people are saying
-      %article
-        %p.testimonial
-          Jade really knows how to service my Cocoa’s dirty
-          anal glands! I always knew that she had the tenacity
-          to really get into the “heart” of the matter. It’s
-          when I came back and saw what she did, that I knew
-          she would be my dog’s butt gland servicer for life!
-        %p.text-right 
-          %strong - John Lennon, A Beatle
-      %article
-        %p.testimonial
-          Jade really knows how to service my Cocoa’s dirty
-          anal glands! I always knew that she had the tenacity
-          to really get into the “heart” of the matter. It’s
-          when I came back and saw what she did, that I knew
-          she would be my dog’s butt gland servicer for life!
-        %p.text-right 
-          %strong - John Lennon, A Beatle
+      - @testimonials.each do |testimonial|
+        %article
+          %p.testimonial
+            = testimonial.body
+          %p.text-right 
+            %strong= "- " + testimonial.client
   %section#yelp.col-md-3
     %header
       %h1 Yelp
