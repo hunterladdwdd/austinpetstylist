@@ -23,13 +23,12 @@
 /* @import must be at top of file, otherwise CSS will not work */
 @import url("//hello.myfonts.net/count/2d42c1");
 
-  
 @font-face {
   font-family: 'ThirstyRoughReg'; 
-  src: font_url('2D42C1_0_0.eot'); 
-  src: font_url('2D42C1_0_0.eot?#iefix') format('embedded-opentype'),
-    font_url('2D42C1_0_0.woff2') format('woff2'),
-    font_url('2D42C1_0_0.woff') format('woff'),
-    font_url('2D42C1_0_0.ttf') format('truetype');
+  src: font-url(asset_path('2D42C1_0_0.eot')); 
+  src: font-url(asset_path('2D42C1_0_0.eot?#iefix')) format('embedded-opentype'),
+    font-url(asset_path('2D42C1_0_0.woff2')) format('woff2'),
+    font-url(asset_path('2D42C1_0_0.woff')) format('woff'),
+    font-url(asset_path('2D42C1_0_0.ttf')) format('truetype');
   }
  
