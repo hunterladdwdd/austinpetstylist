@@ -1,5 +1,5 @@
 class TestimonialsController < ApplicationController
-  before_action :set_testimonial, only: [:edit, :update]
+  before_action :set_testimonial, only: [:edit, :update, :show]
   before_action :set_user
 
   def new
@@ -8,6 +8,7 @@ class TestimonialsController < ApplicationController
 
   def create
     @testimonial = Testimonial.new(testimonial_params)
+    @testimonial.user = current_user
 
     if @testimonial.save
       flash[:notice] = "You've added a new testimonial!"
@@ -30,6 +31,10 @@ class TestimonialsController < ApplicationController
       flash[:error] = "You have not updated this testimonial!"
       render_template :edit
     end
+  end
+
+  def show
+
   end
 
   private

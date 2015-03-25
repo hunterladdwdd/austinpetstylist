@@ -4,22 +4,14 @@
   %section#testimonial-content
     %section.testimonial_wrapper.corner-shadow
       %article
-        = bootstrap_form_tag url: testimonials_path, class: "testimonial" do
+        = bootstrap_form_for @testimonial do |f|
           %header
             %h1 Edit Testimonial
           %fieldset
-            .form-group
-              = label_tag :body, "What did they say?"
-              .row
-                .col-sm-8
-                  = text_area_tag :body, nil, class: "form-control", rows: 10
-            .form-group
-              = label_tag :client, "Which client said it?"
-              .row
-                .col-sm-4
-                  = text_field_tag :client, nil, class: "form-control"
+            = f.text_area :body, label: "What did they say?", label_col: "col-sm-2", control_col: "col-sm-6"
+            = f.text_field :client, label: "Which client said it?", label_col: "col-sm-2", control_col: "col-sm-6", class: "client_name"
           %fieldset.form-group.action
-            = submit_tag "Edit Testimonial", class: "btn btn-default"
+            = f.submit "Edit Testimonial", class: "btn btn-default"
     .up-separator
       = image_tag("shadow_up.png")
 

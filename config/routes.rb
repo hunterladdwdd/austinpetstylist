@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'ui(/:action)', controller: 'ui'
 
-  resources :testimonials, only: [:new, :create, :edit, :update]
+  resources :testimonials, only: [:new, :create, :edit, :update, :show]
   resources :sessions, only: [:create]
 
   get '/sign_in', to: 'sessions#new'

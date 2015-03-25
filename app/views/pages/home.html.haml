@@ -47,9 +47,9 @@
       - @testimonials.each do |testimonial|
         %article
           %p.testimonial
-            = testimonial.body
+            = testimonial.preview
           %p.text-right 
-            %strong= "- " + testimonial.client
+            = link_to "#{testimonial.client}", testimonial_path(testimonial.id)
   %section#yelp.col-md-3
     %header
       %h1 Yelp

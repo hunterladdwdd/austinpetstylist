@@ -5,4 +5,10 @@
     %section.testimonial_wrapper.corner-shadow
       %article
         %header
-          %h1 This is what "#{testimonial.client}" had to say
+          %h1 This is what #{@testimonial.client} had to say
+        %blockquote
+          = @testimonial.body
+        - if logged_in?
+          = link_to "Edit this testimonial", edit_testimonial_path, class: "btn btn-default"
+    .up-separator
+      = image_tag("shadow_up.png")
