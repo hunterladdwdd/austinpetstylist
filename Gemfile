@@ -13,6 +13,7 @@ gem 'jquery-rails'
 gem 'pg' # Postgres
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'bcrypt', '~> 3.1.7'
+gem 'yelp', require: 'yelp'
 
 group :development do
   gem 'thin'
