@@ -5,10 +5,10 @@
       %span.icon-bar
       %span.icon-bar
       %span.icon-bar
+    .nav.navbar-nav#header-title
+      = link_to "Austin Pet Stylist", root_path
     #header-logo
-      %a{:href => root_path, :class => "navbar-brand aps-logo"} 
-        Austin Pet Stylist
-        = image_tag("austinpetstylist_logo.png")
+      = link_to image_tag("austinpetstylist_logo.png"), root_path, class: "navbar-brand aps-logo"
     %nav.navbar-collapse.aps-navbar-collapse.collapse{"aria-expanded" => "false", "style" => "height: 1px"}
       %ul.nav.navbar-nav
         %li= link_to "Services", services_path

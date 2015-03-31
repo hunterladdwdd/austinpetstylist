@@ -4,9 +4,8 @@
   border-bottom: 0
 
 .aps-main-nav
-  .navbar-header
-    .navbar-toggle
-      border-color: #fff
+  .navbar-toggle
+    border-color: #fff
 
 .aps-main-nav
   .navbar-toggle
@@ -14,8 +13,9 @@
       background-color: grey
 
 .aps-main-nav
-  .navbar-brand.aps-logo
-    font-family: "ThirstyRoughReg"
+  .navbar-brand
+    .aps-logo
+      font-family: "ThirstyRoughReg"
 
 @media (max-width: 991px)
   .aps-main-nav
@@ -46,13 +46,20 @@
 @media (min-width: 768px)
   .aps-main-nav
     .navbar-right
-      margin-right: 35px
+      margin-right: -35px
 
 @media (max-width: 991px)
   .aps-main-nav
+    #header-title
+      font-family: "ThirstyRoughReg"
+      font-size: 24px
+      margin-left: 5px
+    #header-logo
+      display: none
     #social-media
       top: 10px
       right: -35px
+
 
 @media (min-width: 992px)
   .aps-main-nav
@@ -83,6 +90,9 @@
           background: none
           color: black
   .aps-main-nav
+    #header-title
+      display: none
+  .aps-main-nav
     #header-logo
       margin: 20px auto 40px
       height: 170px
@@ -90,10 +100,13 @@
       .aps-logo
         margin: 0 auto
         padding: 0
-        background: url("austinpetstylist_logo.png") no-repeat
         width: 600px
         height: 170px
         text-indent: -9999px
+        img
+          height: 170px
+          width: 600px
+          display: block
   .aps-main-nav
     #social-media
       position: absolute
