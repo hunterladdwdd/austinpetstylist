@@ -1,67 +1,68 @@
-%section#services.row
-  .up-separator
-    = image_tag("shadow_up.png")
-  %section#services-content
-    .service-box.col-xs-12.col-md-4.corner-shadow
-      %article
-        %header
-          %h1 Grooming
-        %p 
-          Grooming is very important for your dog’s health
-          and well-being! Imagine if the last time you cut
-          your hair was in the thirteenth century and now
-          it’s bloody six miles long! So it’s my recommend-
-          ation that you come in here and let me shear 
-          your puppy!
-        = link_to "Read More", services_path(:anchor => "grooming"), class: "button-pill"
-    .service-box.col-md-4.corner-shadow
-      %article
-        %header
-          %h1 The Extras
-        %p
-          Grooming is very important for your dog’s health
-          and well-being! Imagine if the last time you cut
-          your hair was in the thirteenth century and now
-          it’s bloody six miles long! So it’s my recommend-
-          ation that you come in here and let me shear 
-          your puppy!
-        = link_to "Read More", services_path(:anchor => "the-extras"), class: "button-pill"
-    .service-box.col-md-4.corner-shadow
-      %article
-        %header
-          %h1 Other Services
-        %p
-          Grooming is very important for your dog’s health
-          and well-being! Imagine if the last time you cut
-          your hair was in the thirteenth century and now
-          it’s bloody six miles long! So it’s my recommend-
-          ation that you come in here and let me shear 
-          your puppy!
-        = link_to "Read More", services_path(:anchor => "other-services"), class: "button-pill"
+.container
+  %section#services.row
     .up-separator
       = image_tag("shadow_up.png")
-%section#reviews.row
-  %section#testimonials.col-md-9
-    %header
-      %h1 What people are saying
-      - @testimonials.each do |testimonial|
+    %section#services-content
+      .service-box.corner-shadow
         %article
-          %p.testimonial
-            = testimonial.preview
-          %p.text-right 
-            = link_to "#{testimonial.client}", testimonial_path(testimonial.id)
-  %section#yelp.col-md-3
-    %header
-      %h1 Yelp
-    %article
-      %p.reviewer.pull-left Kat R.
-      %p.rating.pull-right 4.5 / 5.0
-      %p.clearfix What a fantastic person!
-    %article
-      %p.reviewer.pull-left Kat R.
-      %p.rating.pull-right 4.5 / 5.0
-      %p.clearfix What a fantastic person!
-    %article
-      %p.reviewer.pull-left Kat R.
-      %p.rating.pull-right 4.5 / 5.0
-      %p.clearfix What a fantastic person!
+          %header
+            %h1 Grooming
+          %p 
+            Grooming is very important for your dog’s health
+            and well-being! Imagine if the last time you cut
+            your hair was in the thirteenth century and now
+            it’s bloody six miles long! So it’s my recommend-
+            ation that you come in here and let me shear 
+            your puppy!
+          = link_to "Read More", services_path(:anchor => "grooming"), class: "button-pill"
+      .service-box.corner-shadow
+        %article
+          %header
+            %h1 The Extras
+          %p
+            Grooming is very important for your dog’s health
+            and well-being! Imagine if the last time you cut
+            your hair was in the thirteenth century and now
+            it’s bloody six miles long! So it’s my recommend-
+            ation that you come in here and let me shear 
+            your puppy!
+          = link_to "Read More", services_path(:anchor => "the-extras"), class: "button-pill"
+      .service-box.corner-shadow#last-service
+        %article
+          %header
+            %h1 Other Services
+          %p
+            Grooming is very important for your dog’s health
+            and well-being! Imagine if the last time you cut
+            your hair was in the thirteenth century and now
+            it’s bloody six miles long! So it’s my recommend-
+            ation that you come in here and let me shear 
+            your puppy!
+          = link_to "Read More", services_path(:anchor => "other-services"), class: "button-pill"
+      .up-separator
+        = image_tag("shadow_up.png")
+  %section#reviews.row.side-shadow
+    %section#testimonials
+      %header
+        %h1 What people are saying
+        - @testimonials.each do |testimonial|
+          %article
+            %p.testimonial
+              = testimonial.preview
+            %p.text-right 
+              = link_to "#{testimonial.client}", testimonial_path(testimonial.id)
+    %section#yelp
+      %header
+        %h1 Yelp
+      %article
+        %p.reviewer.pull-left Kat R.
+        %p.rating.pull-right 4.5 / 5.0
+        %p.clearfix What a fantastic person!
+      %article
+        %p.reviewer.pull-left Kat R.
+        %p.rating.pull-right 4.5 / 5.0
+        %p.clearfix What a fantastic person!
+      %article
+        %p.reviewer.pull-left Kat R.
+        %p.rating.pull-right 4.5 / 5.0
+        %p.clearfix What a fantastic person!

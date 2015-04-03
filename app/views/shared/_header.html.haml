@@ -1,35 +1,34 @@
 .container
-  .navbar-header.col-lg-12
+  .navbar-header
     %button.navbar-toggle.collapsed{:type => "button", "data-toggle" => "collapse", "data-target" => ".aps-navbar-collapse"}
       %span.sr-only Toggle navigation
       %span.icon-bar
       %span.icon-bar
       %span.icon-bar
-    .nav.navbar-nav#header-title
-      = link_to "Austin Pet Stylist", root_path
+    = link_to "Austin Pet Stylist", root_path, id: "aps-logo-text"
     #header-logo
       = link_to image_tag("austinpetstylist_logo.png"), root_path, class: "navbar-brand aps-logo"
-    %nav.navbar-collapse.aps-navbar-collapse.collapse{"aria-expanded" => "false", "style" => "height: 1px"}
-      %ul.nav.navbar-nav
-        %li= link_to "Services", services_path
-        %li= link_to "About Us", about_us_path
-        %li= link_to "VIP Rewards", vip_rewards_path
-        %li= link_to "Policies", policies_path
-        %li= link_to "Resources", resources_path
-        %li= link_to "Contact", contact_path
-      %ul.navbar-right
-        - if !logged_in?
-          %li= link_to "Log In", sign_in_path
-        - if logged_in?
-          %li= link_to "Create Testimonial", new_testimonial_path
-          %li= link_to "Log Out", sign_out_path
-    #social-media
-      %ul
-        %li
-          %a{:href => "https://www.facebook.com/austinpetstylist?ref=br_tf"}
-            = image_tag("facebook_logo.png")
-        %li
-          %a{:href => "https://twitter.com/atxpetstylist"}
-            = image_tag("twitter_logo.png")
-    .down-separator
-      = image_tag("shadow_down.png")
+  %nav.navbar-collapse.aps-navbar-collapse.collapse{"aria-expanded" => "false", "style" => "height: 1px"}
+    %ul.nav.nav-pills
+      %li= link_to "Services", services_path
+      %li= link_to "About Us", about_us_path
+      %li= link_to "VIP Rewards", vip_rewards_path
+      %li= link_to "Policies", policies_path
+      %li= link_to "Resources", resources_path
+      %li= link_to "Contact", contact_path
+  %ul.nav.navbar-nav.navbar-left
+    - if !logged_in?
+      %li= link_to "Log In", sign_in_path
+    - if logged_in?
+      %li= link_to "Create Testimonial", new_testimonial_path
+      %li= link_to "Log Out", sign_out_path
+  #social-media
+    %ul
+      %li
+        %a{:href => "https://www.facebook.com/austinpetstylist?ref=br_tf"}
+          = image_tag("facebook_logo.png")
+      %li
+        %a{:href => "https://twitter.com/atxpetstylist"}
+          = image_tag("twitter_logo.png")
+  .down-separator
+    = image_tag("shadow_down.png")

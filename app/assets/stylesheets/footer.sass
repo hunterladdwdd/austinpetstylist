@@ -1,34 +1,131 @@
-section#footer-wrapper
+.aps-footer
+  width: 100%
   background: image-url('footer_wrapper_bg.png') repeat-x
-  #footer-inner
-    margin: -10px auto
-    width: 960px
-    height: 149px
-    background: image-url('footer_bg.png') no-repeat
-    ul.footer-nav
-      margin: 20px 0
-      float: left
-      li
-        float: left
-        margin-right: 10px
-        a
-          color: #fff
-    p
-      small
-        color: #fff
-        float: left
-    #cred-logos
-      float: right
-      background: #fff
-      padding: 20px
-      position: relative
-      top: -20px
-      right: 20px
-      border: 1px solid #58595b
-      ul
-        float: right
-        li
+  #footer-wrapper
+    #footer-inner
+      margin: -30px auto 0px
+      width: 960px
+      height: 150px
+      overflow: hidden
+      background: image-url('footer_bg.png') no-repeat
+      border-top: 10px ridge #3C80BF
+      border-bottom: 10px groove #3C80BF
+      .footer-content
+        .footer-nav
+          margin: 20px 0 20px 10px
+          float: left
+          li
+            float: left
+            margin-right: 10px
+            a
+              color: #fff
+        p
+          float: left
+          clear: both
+          margin: 0 0 10px 10px
+          small
+            color: #fff
+            float: left
+        #cred-logos
           float: right
-          margin-left: 20px
-        li:last-child
-          margin-left: 0
+          background: #fff
+          padding: 10px
+          position: relative
+          top: -55px
+          right: 20px
+          box-shadow: 0 0 0 #000, 0 0 5px #000, 0 0 5px #000
+          ul
+            margin-bottom: 0
+            float: right
+            li
+              float: right
+              margin-left: 20px
+            li:last-child
+              margin-left: 0
+
+@media (max-device-width: 1024px)
+
+@media (max-device-width: 768px)
+  .aps-footer
+    .container
+      width: 750px
+      #footer-wrapper
+        width: 100%
+        margin: 0 auto
+        #footer-inner
+          width: 100%
+          height: 80px
+          background-image: none
+          box-shadow: none
+          .footer-nav
+            ul
+              margin: 20px 10 20px 10px
+              li
+                a
+                  font-size: 12px
+            p
+              font-size: 12px
+          #cred-logos
+            display: none
+
+@media (max-device-width: 600px)
+  .aps-footer
+    .container
+      width: 540px
+      #footer-wrapper
+        width: 100%
+        margin: 0 auto
+        #footer-inner
+          width: 100%
+          height: 80px
+          background-image: none
+          box-shadow: none
+          .footer-nav
+            ul
+              margin: 20px 10 20px 10px
+              li
+                a
+                  font-size: 12px
+            p
+              font-size: 12px
+          #cred-logos
+            display: none
+
+@media (max-device-width: 320px)
+  .aps-footer
+    background-repeat: repeat
+    .container
+      width: 320px
+      #footer-wrapper
+        width: 100%
+        height: 102px
+        margin: -20px auto
+        #footer-inner
+          margin: -10px auto 0
+          width: 100%
+          height: 112px
+          overflow: visible
+          background: image-url('footer_bg.png') no-repeat
+          border-top: 5px ridge #3c80BF
+          border-bottom: none
+          box-shadow: 0px 10px 10px #000, 0px 10px 10px #000
+          .footer-content
+            position: relative
+            top: -20px
+            width: 100%
+            background-image: none
+            .footer-nav
+              margin: 25px 10px 10px 10px
+              li
+                float: left
+                a
+                  font-size: 12px
+            p
+              float: left
+              clear: both
+              margin: 0 0 5px 5px
+              font-size: 12px
+              small
+                float: left
+            #cred-logos
+              display: none

@@ -30,8 +30,9 @@
   %body
     %header.navbar.navbar-static-top.aps-main-nav#top
       = render 'shared/header'
-    %section.content.clearfix
+    %section.content.clearfix#slider-wrap
       = render 'shared/slider'
+    %section.content.clearfix.aps-main
       = yield
-    %footer
+    %footer.aps-footer
       = render 'shared/footer'
