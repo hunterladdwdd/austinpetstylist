@@ -2,6 +2,8 @@ section#about_us
   .up-separator
     width: 960px
     margin: 0 auto
+    img
+      width: 100%
   #about_us-content
     width: 960px
     margin: 0 auto
@@ -65,3 +67,76 @@ section#about_us
             border-top: 5px ridge #c56182
             border-bottom: 5px groove #c56182
             padding: 10px 0 15px
+
+@media (max-width: 768px)
+  .container
+    width: 750px
+    #about_us
+      width: 750px
+      .up-separator
+        width: 100%
+        img
+          width: 100%
+      #about_us-content
+        width: 100%
+        article
+          img
+            width: 50%
+
+@media (max-device-width: 568px)
+  .container
+    width: 540px
+    #about_us
+      width: 540px
+      .up-separator
+        width: 100%
+        img
+          width: 100%
+      #about_us-content
+        width: 100%
+        article
+          img.profile
+            display: none
+          blockquote
+            font-size: 12px
+            padding: 0 15px
+        .special-format
+          padding: 0
+          margin: 0
+          article
+            padding: 0
+            margin: 0
+            h1
+              font-size: 16px
+
+@media (max-width: 320px)
+  .container
+    width: 300px
+    #about_us
+      width: 100%
+      margin: 0 auto
+      .up-separator
+        width: 100%
+        img
+          width: 100%
+      #about_us-content
+        margin-top: -5px
+        width: 100%
+        article
+          img
+            display: none
+          h1
+            margin-top: 0
+          h2
+            padding-bottom: 0
+          blockquote
+            font-size: 12px
+            padding: 0 15px
+        .special-format
+          padding: 0
+          margin: 0
+          article
+            padding: 0
+            margin: 0
+            h1
+              font-size: 16px
