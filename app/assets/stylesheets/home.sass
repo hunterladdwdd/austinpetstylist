@@ -1,4 +1,4 @@
-section#services
+#services
   .up-separator
     width: 960px
     margin: 0 auto
@@ -36,13 +36,13 @@ section#services
           background-color: #3c80bf
           border-radius: 10px
 
-section#reviews
+#reviews
   width: 960px
   margin: 0 auto
   padding: 20px 10px 0px 10px
   #testimonials
-    width: 65%
-    margin-right: 10px
+    width: 60%
+    margin: 0 10px 0 20px
     float: left
     header
       h1
@@ -55,7 +55,8 @@ section#reviews
     article
       margin-bottom: 20px
   #yelp
-    width: 33%
+    width: 30%
+    margin: 0 20px 0 0
     float: right
     header
       margin: 0px auto 20px
@@ -93,8 +94,16 @@ section#reviews
               a
                 font-size: 18px
                 width: 120px
+      #reviews
+        margin: 0 -15px
+        #testimonials
+          width: 60%
+          margin: 0 10px 0 20px
+        #yelp
+          width: 30%
+          margin: 0 20px 0 0
 
-@media (max-device-width: 768px)
+@media (max-width: 768px)
   .aps-main
     .container
       width: 750px
@@ -111,6 +120,15 @@ section#reviews
               float: none
               p
                 font-size: 12px
+      #reviews
+        width: 750px
+        margin: 0 -15px 0 -15px
+        #testimonials
+          width: 60%
+          margin: 0 10px 0 20px
+        #yelp
+          width: 30%
+          margin: 0 20px 0 0
 
 @media (max-device-width: 600px)
   .aps-main
@@ -153,7 +171,41 @@ section#reviews
             p
               font-size: 15px
 
-@media (max-device-width: 320px)
+@media (max-device-width: 568px)
+  .aps-main
+    .container
+      width: 540px
+      #services
+        .up-separator
+          width: 100%
+          img
+            width: 100%
+        #services-content
+          width: 100%
+          margin: 0 auto
+          .service-box
+            width: 100%
+            margin: 0 auto 20px
+            h1
+              font-size: 30px
+            p
+              font-size: 16px
+              line-height: 2em
+            a
+              font-size: 18px
+              width: 120px
+          .up-separator
+            width: 100%
+            img
+              width: 100%
+      #reviews
+        width: 540px
+        #testimonials
+          width: 100%
+        #yelp
+          width: 100%
+
+@media (max-width: 320px)
   .aps-main
     margin-bottom: 0
     padding-bottom: 0
@@ -190,11 +242,12 @@ section#reviews
               top: 5px
       #reviews
         width: 100%
-        margin: 0
+        margin: -10px 0 0 0
         padding: 20px
         #testimonials
           width: 100%
           padding-bottom: 20px
+          margin: 0
           border-bottom: 1px solid grey
           h1
             font-size: 22px
@@ -209,3 +262,4 @@ section#reviews
           width: 100%
           padding-bottom: 0
           border-bottom: none
+          margin: 0

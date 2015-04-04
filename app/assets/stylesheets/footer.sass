@@ -44,19 +44,22 @@
               margin-left: 0
 
 @media (max-device-width: 1024px)
+  .aps-footer
+    .container
+      width: 960px
 
-@media (max-device-width: 768px)
+@media (max-width: 768px)
   .aps-footer
     .container
       width: 750px
       #footer-wrapper
-        width: 100%
-        margin: 0 auto
+        width: 750px
+        margin: -20px -15px 0 -15px
         #footer-inner
           width: 100%
-          height: 80px
-          background-image: none
-          box-shadow: none
+          height: 98px
+          background: url('footer_bg.png') no-repeat
+          overflow: visible
           .footer-nav
             ul
               margin: 20px 10 20px 10px
@@ -91,11 +94,31 @@
           #cred-logos
             display: none
 
-@media (max-device-width: 320px)
+@media (max-device-width: 568px)
+  .aps-footer
+    .container
+      width: 540px
+      padding: 0
+      #footer-wrapper
+        width: 100%
+        height: 102px
+        margin: -20px auto 0
+        #footer-inner
+          margin: -10px auto 0
+          width: 100%
+          height: 112px
+          overflow: visible
+          background: image-url('footer_bg.png') no-repeat
+          border-top: 5px ridge #3c80BF
+          border-bottom: none
+          box-shadow: 0px 10px 10px #000, 0px 10px 10px #000
+
+@media (max-width: 320px)
   .aps-footer
     background-repeat: repeat
     .container
       width: 320px
+      padding: 0 15px
       #footer-wrapper
         width: 100%
         height: 102px

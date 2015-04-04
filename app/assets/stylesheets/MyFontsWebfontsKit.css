@@ -31,4 +31,10 @@
     url('/fonts/2D42C1_0_0.woff') format('woff'),
     url('/fonts/2D42C1_0_0.ttf') format('truetype');
   }
+
+  @font-face {
+    font-family: "Solano Gothic MVB Medium";
+    src: url('/fonts/MVB_SolanoGothicMVB_Md.otf') format('opentype'),
+      url('/fonts/MVB_SolanoGothicMVB_MD.ttf') format('truetype');
+  }
  
