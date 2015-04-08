@@ -1,10 +1,8 @@
 .aps-main-nav
   margin-bottom: 0 !important
-  background-color: #fff
   border-bottom: 0
   .container
     position: relative
-    width: 980px
     .navbar-header
       float: none
       .navbar-toggle
@@ -23,18 +21,11 @@
           float: none
     .aps-navbar-collapse
       .nav
-        margin: 20px auto 10px
-        width: 779px
+        margin-bottom: 10px
         float: none
-        font-size: 24px
         li
           a
-            font-family: "ThirstyRoughReg"
-            color: #58585B
-          a:hover
-            background-color: #c56182
-            color: #fff
-            border-radius: 5px
+            padding: 10px 14px
     .navbar-left
       position: absolute
       top: 0
@@ -62,35 +53,41 @@
 @media (max-device-width: 1024px)
   .aps-main-nav
     .container
-      width: 960px
       .navbar-header
         #header-logo
           margin: 15px auto
           width: 600px
+
+@media (min-width: 1200px)
+  .aps-main-nav
+    .container
       .aps-navbar-collapse
         .nav
-          margin: 15px auto 5px
-          width: 732px
-          font-size: 22px
+          font-size: 1.36499em
+
+
+@media (min-width: 768px) and (max-width: 992px)
+  .aps-main-nav
+    .container
+      .aps-navbar-collapse
+        .nav
+          width: 700px
+          margin: 0 auto 15px
+          font-size: 1em
 
 @media (max-width: 768px)
   .aps-main-nav
     .container
-      width: 750px
       .navbar-header
-        #header-logo
-          margin: 10px auto
-          width: 450px
-          img
-            width: 100%
+        #aps-logo-text
+          display: block
+          float: left
+          font-family: "ThirstyRoughReg"
+          font-size: 24px
+          color: #3C80BF
+          margin: 10px 0 5px 5px
       .aps-navbar-collapse
         .nav
-          margin: 10px auto 5px
-          width: 595px
-          font-size: 16px
-      .navbar-left
-        left: 20px
-        font-size: 14px
       #social-media
         top: 10px
         right: 55px
@@ -106,11 +103,12 @@
             margin-top: 0
           li:last-child:hover
             margin-left: 0
+      .down-separator
+        display: none
 
 @media (max-device-width: 600px)
   .aps-main-nav
     .container
-      width: 540px
       .navbar-header
         #aps-logo-text
           float: left
@@ -120,9 +118,7 @@
           margin: 10px 0 5px 5px
         #aps-logo-text
           display: block
-        #header-logo
-          img
-            display: none
+          margin-left: 20px
       .aps-navbar-collapse
         .nav
           float: none
@@ -139,11 +135,6 @@
             a:hover
               background: none
               color: #3C80BF
-      .navbar-left
-        left: 215px
-        li
-          a
-            font-size: 12px
       #social-media
         float: right
         ul
@@ -154,24 +145,28 @@
 @media (max-device-width: 568px)
   .aps-main-nav
     .container
-      width: 540px
-
-@media (max-width: 320px)
-  .aps-main-nav
-    .container
-      width: 300px
       .navbar-header
         #aps-logo-text
           float: left
           font-family: "ThirstyRoughReg"
           font-size: 16px
           color: #3C80BF
-          margin: 15px 0 5px 0
+          margin: 15px 0 5px 20px
         #aps-logo-text
           display: block
-        #header-logo
-          img
-            display: none
+
+@media (max-width: 320px)
+  .aps-main-nav
+    .container
+      .navbar-header
+        #aps-logo-text
+          float: left
+          font-family: "ThirstyRoughReg"
+          font-size: 16px
+          color: #3C80BF
+          margin: 15px 0 5px 10px
+        #aps-logo-text
+          display: block
       .aps-navbar-collapse
         .nav
           float: none
@@ -191,13 +186,11 @@
             a:hover
               background: none
               color: #3C80BF
-      .navbar-left
-        display: none
       #social-media
         float: right
         top: 5px
         ul
           float: left
-          margin: 5px
+          margin-top: 5px
       .down-separator
         display: none

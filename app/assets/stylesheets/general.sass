@@ -1,12 +1,37 @@
 body
-  section.content
+  .content
     padding-bottom: 10px
     margin-bottom: 20px
+  .aps-main
+    .container
+      .up-separator
+        img
+          width: 100%
+        margin: 0 auto
+      .up-separator.background
+        background-color: #f5f5f5
+      article
+        position: relative
+        padding: 15px
+        border: 1px solid #ddd
+        background-color: #fff
+      .content-container
+        margin: 0 auto
+        padding: 15px 0 0 0
+        background-color: #f5f5f5
+      .clear
+        clear: both
+      .wide-box
+        margin-bottom: 15px
+      #last.wide-box
+        margin-bottom: 0px
 
-section#ui-wrapper
-  width: 960px
-  margin: 0 auto  
+@media (min-width: 1200px)
+  .up-separator
+    img
+      width: 100%
 
-section.ui-index
-  padding: 30px
-  background-color: #f5f5f5
+@media (min-width: 768px)
+  .up-separator
+    img
+      width: 100%

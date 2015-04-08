@@ -1,64 +1,25 @@
-section#policies
-  .up-separator
-    width: 960px
-    margin: 0 auto
-  #policies-content
-    width: 960px
-    margin: 0 auto
-    padding: 20px 10px 0px
-    background-color: #f5f5f5
-    .policy-wrapper
-      margin-bottom: 20px
-    article
-      z-index: 200
-      margin-bottom: 20px
-      padding: 20px 10px 30px
-      background-color: #fff
-      position: relative
-      h1
-        font-size: 30px
-        color: #3c80bf
-        font-family: "ThirstyRoughReg"
-        padding-bottom: 20px
-      h2
-        font-size: 22px
-        color: #3c80bf
-        font-family: "Solano Gothic MVB Medium"
-        padding-bottom: 20px
-        width: 55%
-      p
-        margin-bottom: 10px
-        font-family: "Solano Gothic MVB Medium"
-        font-size: 22px
-        color: #3c80bf
-      img
-        position: absolute
-        float: right
-        top: 10px
-        right: 10px
-      blockquote
-        font-size: 16px
-        font-weight: normal
-        font-style: italic
-        padding: 15px
-        margin-bottom: 20px
-        border-left: 5px solid #c56182
-        width: 66%
+#policies
+  article
+    img
+      position: absolute
+      float: right
+      right: 0
+    blockquote
+      font-style: italic
+    ul
+      li
         color: #777
-      ul
-        width: 55%
-        li
-          font-family: "Verdana"
-          font-size: 14px
-          line-height: 1.5em
-          color: #777
-          list-style-type: square
-          margin: 0 0 20px 30px
-          > span
-            font-weight: bold
-            color: #444
-          p
-            font-family: "Verdana", sans-serif
-            color: #000
-            font-size: 16px
-            padding-bottom: 20px
+        list-style-type: square
+        margin: 0 0 20px 30px
+        > span
+          font-weight: bold
+          color: #444
+        p
+          color: #000
+          padding-bottom: 20px
+
+@media (max-width: 992px)
+  #policies
+    article
+      img
+        display: none

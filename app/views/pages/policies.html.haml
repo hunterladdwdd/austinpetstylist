@@ -1,43 +1,46 @@
-%section#policies.row
-  .up-separator
-    = image_tag("shadow_up.png")
-  %section#policies-content
-    %section.policy-wrapper.corner-shadow
-      %article
-        %header
-          %h1 Jade's Policies
-          %h2 Please note these policies were written to ensure you and your dog have the best experience possible.
-          = image_tag("ollie-bentley-question.png")
-        %ul
-          %li
-            If you cannot make your appointment please give at least 12 hours notice. There will be a 
-            %span $30 no-show/last minute cancellation fee per dog.
-          %li
-            If you are more than 15 minutes late to your appointment, you may need to be rescheduled.
-          %li
-            ALL DOGS must be on a leash.
-          %li
-            Please pick up your dog promptly, unless prior arrangements have been agreed upon.
-          %li 
-            All dogs must be current on their rabies vaccination or have a rabies titer. Proof of vaccination must be brought to the first appointment. I suggest other vaccinations be up to date based on your vet’s recommendations.
-          %li
-            We do not accept flea infested dogs in the salon. Please seek flea treatment from your vet or contact us before the appointment for a Capstar pill to kill fleas. If fleas are discovered during grooming, a flea bath and Capstar will be given, and there will be an additional charge of $10 - $15 to cover cost and time of cleaning.
-          %li
-            We will dematt dogs, to an extent, at a rate of $1/minute if the matting is minimal and the dog tolerates the process. If there is excess matting ot the dog is uncomfortable, it will need to be shaved to start with a fresh coat. We believe in comfort and safety over vanity and have each pet’s best interest in mind.
-          / %li
-          /   Please use the designated potty area only and do not let your dogs potty on the sidewalk or in the salon.
-    %section.policy-wrapper.corner-shadow
-      %article
-        %header
-          %h1 Frequently Asked Questions
-        %p How long does the appointment take?
-        %blockquote
-          = "The length of time depends on lots of factors: type of service provided, condition of your dog’s coat, style desired, your pet’s behavior, etc. Most smaller dogs on good coat condition can be completed in about 2 hours or so. Plan to drop off your dog at the scheduled appointment time and pick up promptly once called. Quiet dogs are welcome to stay longer when needed as long as it is pre-arranged and space is available. Keep in mind every dog receives a thorough bath, towel-dry, hand blow-dry, full brush-out, ear cleaning, nail trim, and hand scissor finish."
-        %p Do you groom all dogs?
-        %blockquote
-          = "I have no specific breed restrictions, however I can only groom dogs under 65 lbs."
-        %p Do you groom cats?
-        %blockquote
-          = "I love animals of all type, but I only groom dogs at this time. If you have a cat and are looking for an excellent groomer, I can certainly recommend one for you!"
+.container
+  #policies.row
     .up-separator
       = image_tag("shadow_up.png")
+    .content-container
+      .col-md-12.wide-box
+        %article
+          %header.col-md-6.col-lg-8
+            %h1 Jade's Policies
+            %h2 Please note these policies were written to ensure you and your dog have the best experience possible.
+          %ul.col-md-6.col-lg-8.clear
+            %li
+              If you cannot make your appointment please give at least 12 hours notice. There will be a 
+              %span $30 no-show/last minute cancellation fee per dog.
+            %li
+              If you are more than 15 minutes late to your appointment, you may need to be rescheduled.
+            %li
+              ALL DOGS must be on a leash.
+            %li
+              Please pick up your dog promptly, unless prior arrangements have been agreed upon.
+            %li 
+              All dogs must be current on their rabies vaccination or have a rabies titer. Proof of vaccination must be brought to the first appointment. I suggest other vaccinations be up to date based on your vet’s recommendations.
+            %li
+              We do not accept flea infested dogs in the salon. Please seek flea treatment from your vet or contact us before the appointment for a Capstar pill to kill fleas. If fleas are discovered during grooming, a flea bath and Capstar will be given, and there will be an additional charge of $10 - $15 to cover cost and time of cleaning.
+            %li
+              We will dematt dogs, to an extent, at a rate of $1/minute if the matting is minimal and the dog tolerates the process. If there is excess matting ot the dog is uncomfortable, it will need to be shaved to start with a fresh coat. We believe in comfort and safety over vanity and have each pet’s best interest in mind.
+            / %li
+            /   Please use the designated potty area only and do not let your dogs potty on the sidewalk or in the salon.
+          = image_tag("ollie-bentley-question.png", class: "hidden-xs col-lg-4 col-md-6")
+          .clear
+      .col-md-12.wide-box#last
+        %article
+          %header
+            %h1 Frequently Asked Questions
+          %p How long does the appointment take?
+          %blockquote
+            = "The length of time depends on lots of factors: type of service provided, condition of your dog’s coat, style desired, your pet’s behavior, etc. Most smaller dogs on good coat condition can be completed in about 2 hours or so. Plan to drop off your dog at the scheduled appointment time and pick up promptly once called. Quiet dogs are welcome to stay longer when needed as long as it is pre-arranged and space is available. Keep in mind every dog receives a thorough bath, towel-dry, hand blow-dry, full brush-out, ear cleaning, nail trim, and hand scissor finish."
+          %p Do you groom all dogs?
+          %blockquote
+            = "I have no specific breed restrictions, however I can only groom dogs under 65 lbs."
+          %p Do you groom cats?
+          %blockquote
+            = "I love animals of all type, but I only groom dogs at this time. If you have a cat and are looking for an excellent groomer, I can certainly recommend one for you!"
+      .up-separator.background.col-xs-12.col-md-12.col-lg-12
+        = image_tag("shadow_up.png")
+      .clear

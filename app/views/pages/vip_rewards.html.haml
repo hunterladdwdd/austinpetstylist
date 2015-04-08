@@ -1,18 +1,18 @@
-%section#vip-rewards.row
-  .up-separator
-    = image_tag("shadow_up.png")
-  %section#vip-rewards-content
-    %section.vip-rewards-wrapper.corner-shadow
-      %article
-        %header.col-sm-6
-          %h1
-            %span VIP 
-            Rewards
-          %h2 Featuring 5% off your next appointment when you prebook before you leave and book no later than six weeks out
-        %section
-          = image_tag("ollie-bentley-dressed.png")
-          %p You also get:
-          %ul
+.container
+  #vip-rewards.row
+    .up-separator
+      = image_tag("shadow_up.png")
+    .content-container
+      .col-md-12.wide-box
+        %article
+          %header
+            %h1
+              %span VIP 
+              Rewards
+            %h2 Featuring 5% off your next appointment when you prebook before you leave and book no later than six weeks out
+            = image_tag("ollie-bentley-dressed.png")
+          %p.clear You also get:
+          %ul.clear
             %li Priority holiday scheduling
             %li Priority weekend appointments
             %li
@@ -21,6 +21,5 @@
             %li
               %span Free
               toothbrushing for dogs on a two week schedule
-        
-    .up-separator
-      = image_tag("shadow_up.png")
+      .up-separator.background
+        = image_tag("shadow_up.png")

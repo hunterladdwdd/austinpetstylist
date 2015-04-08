@@ -7,16 +7,16 @@
       %span.icon-bar
     = link_to "Austin Pet Stylist", root_path, id: "aps-logo-text"
     #header-logo
-      = link_to image_tag("austinpetstylist_logo.png"), root_path, class: "navbar-brand aps-logo"
+      = link_to image_tag("austinpetstylist_logo.png"), root_path, class: "navbar-brand aps-logo hidden-sm hidden-xs"
   %nav.navbar-collapse.aps-navbar-collapse.collapse{"aria-expanded" => "false", "style" => "height: 1px"}
-    %ul.nav.nav-pills
+    %ul.nav.nav-pills.col-md-8.col-md-offset-2.col-lg-8.col-lg-offset-2.clear
       %li= link_to "Services", services_path
       %li= link_to "About Us", about_us_path
       %li= link_to "VIP Rewards", vip_rewards_path
       %li= link_to "Policies", policies_path
-      %li= link_to "Resources", resources_path
+      %li= link_to "Resources & Referrals", resources_path
       %li= link_to "Contact", contact_path
-  %ul.nav.navbar-nav.navbar-left
+  %ul.nav.navbar-nav.navbar-left.hidden-sm.hidden-xs
     - if !logged_in?
       %li= link_to "Log In", sign_in_path
     - if logged_in?

@@ -1,9 +1,9 @@
 .container
-  %section#services.row
+  #services.row
     .up-separator
       = image_tag("shadow_up.png")
-    %section#services-content
-      .service-box.corner-shadow
+    #services-content
+      .home-service-box
         %article
           %header
             %h1 Grooming
@@ -15,7 +15,7 @@
             ation that you come in here and let me shear 
             your puppy!
           = link_to "Read More", services_path(:anchor => "grooming"), class: "button-pill"
-      .service-box.corner-shadow
+      .home-service-box
         %article
           %header
             %h1 The Extras
@@ -27,7 +27,7 @@
             ation that you come in here and let me shear 
             your puppy!
           = link_to "Read More", services_path(:anchor => "the-extras"), class: "button-pill"
-      .service-box.corner-shadow#last-service
+      .home-service-box#last-service
         %article
           %header
             %h1 Other Services
@@ -41,28 +41,31 @@
           = link_to "Read More", services_path(:anchor => "other-services"), class: "button-pill"
       .up-separator
         = image_tag("shadow_up.png")
-  %section#reviews.row.side-shadow
-    %section#testimonials
-      %header
-        %h1 What people are saying
+  #reviews.row
+    #reviews-content.side-shadow
+      #testimonials
+        %header
+          %h1 What people are saying
         - @testimonials.each do |testimonial|
           %article
             %p.testimonial
               = testimonial.preview
             %p.text-right 
               = link_to "#{testimonial.client}", testimonial_path(testimonial.id)
-    %section#yelp
-      %header
-        %h1 Yelp
-      %article
-        %p.reviewer.pull-left Kat R.
-        %p.rating.pull-right 4.5 / 5.0
-        %p.clearfix What a fantastic person!
-      %article
-        %p.reviewer.pull-left Kat R.
-        %p.rating.pull-right 4.5 / 5.0
-        %p.clearfix What a fantastic person!
-      %article
-        %p.reviewer.pull-left Kat R.
-        %p.rating.pull-right 4.5 / 5.0
-        %p.clearfix What a fantastic person!
+      #yelp
+        %header
+          %h1 Yelp
+        %article
+          %p.reviewer.pull-left Kat R.
+          %p.rating.pull-right 4.5 / 5.0
+          %p.clearfix What a fantastic person!
+        %article
+          %p.reviewer.pull-left Kat R.
+          %p.rating.pull-right 4.5 / 5.0
+          %p.clearfix What a fantastic person!
+        %article
+          %p.reviewer.pull-left Kat R.
+          %p.rating.pull-right 4.5 / 5.0
+          %p.clearfix What a fantastic person!
+      .up-separator
+        = image_tag("shadow_up.png")

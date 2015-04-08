@@ -1,28 +1,32 @@
-.container#services-container
-  %section#services.row
+.container
+  #services.row
     .up-separator
       = image_tag("shadow_up.png")
-    %section#services-content.services-main
-      .left-bottom-shadow.wide-service-box.left-align
+    .content-container.services-main
+      .col-md-12.wide-box
         %article
           %header
             %a{:id => 'grooming'}
             %h1 Grooming
           %ul
             %li
-              %span 300
-              Bath & Blow-out
+              %h2
+                %span 300
+                Bath & Blow-out
               %p Great for in-between grooms or dogs that don't require any trimming. Nails and ears included!
             %li
-              %span 35+
-              Mini Style
+              %h2
+                %span 35+
+                Mini Style
               %p Bath, blow-out, and brush plus a trim of the face, feet, and sanitary regions.
             %li
-              %span 50+
-              Full Style
+              %h2
+                %span 50+
+                Full Style
               %p Bath, blow-out, and brush plus a customized, all-over style!
             %li
-              Deshedding
+              %h2
+                Deshedding
               %p Automatically included with bath and styling services! Additional charges may apply for very heavy shedders.
           %blockquote
             %ul
@@ -32,57 +36,68 @@
                 Dematting will be done at an additional charge of $1 per minute. Not all dogs can be dematted. The pet's comfort and safety is a top priority.
               %li 
                 Starting prices are for lightly coated small dogs. Price will vary based on size, coat condition, and temperament.
-      .wide-service-box#special-border
+      .col-md-12.wide-box
         %article
           %header
             %a{:id => 'the-extras'}
             %h1 The Extras & Add-ons
           %ul
             %li
-              %span 12
-              Mini Spa
+              %h2
+                %span 12
+                Mini Spa
               %p Mellow Pet shampoo, moisturizing conditioner, blueberry or papaya facial, with massage, Mellow Pet aromatherapy, and nail smoothing.   
             %li
-              %span 20
-              Full Spa
+              %h2
+                %span 20
+                Full Spa
               %p Mellow Pet shampoo, moisturizing conditioner, blueberry or papaya facial, with massage, Mellow Pet aromatherapy, nail smoothing, paw moisturizing cream, and a coconut oil sugar scrub.
             %li
-              %span 7+
-              Creative Coloring
+              %h2
+                %span 7+
+                Creative Coloring
               %p Pricing based on amount of coloring used and area covered
             %li
-              %span 7+
-              Nail Painting
+              %h2
+                %span 7+
+                Nail Painting
             %li
-              %span 3
-              Feather Extensions
+              %h2
+                %span 3
+                Feather Extensions
             %li
-              %span 3
-              Blueberry or Papaya Facial
+              %h2
+                %span 3
+                Blueberry or Papaya Facial
             %li
-              %span 5
-              Toothbrusing
+              %h2
+                %span 5
+                Toothbrusing
             %li
-              %span 1/min
-              Dematting
-      .left-bottom-shadow.wide-service-box#last
+              %h2
+                %span 1/min
+                Dematting
+      .col-md-12.wide-box#last
         %article
           %header
             %a{:id => 'other-services'}
             %h1 Other Services
           %ul
             %li
-              %span 60+
-              One or Twice a Year Shavedown (extremely matted dogs)
+              %h2
+                %span 60+
+                One or Twice a Year Shavedown (extremely matted dogs)
             %li
-              %span 45/hour
-              Puppy's First Style
+              %h2
+                %span 45/hour
+                Puppy's First Style
               %p Puppes should be slowly introduced to grooming so they have a positive first experience. Your puppy will be bathed, towel-dried, and gently blow-dried. They will be introduced to our styling tools, and if tolerated, will get a light trim of the eyes, feet, and sanitary regions. Most puppies will be readyf or a full style by their second appointment.
             %li
-              %span 60/hour
-              Special Needs Styling
+              %h2
+                %span 60/hour
+                Special Needs Styling
               %p Sometimes dogs need some extra TLC to make them as comfortable as possible. This applies to dogs with behavioral issues, very nervous dogs, or major health issues requiring a second hand. Please note that on occasion a groom may need to be completed over two or more sessions for the safety and comfort of your loved one.
           = image_tag("resources-banner.png")
-      .clear
-      .up-separator
+      .col-md-12.up-separator
         = image_tag("shadow_up.png")
+      .clear

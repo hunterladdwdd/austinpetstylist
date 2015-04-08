@@ -1,14 +1,14 @@
 .container
-  %section#footer-wrapper.row
-    %section#footer-inner.side-shadow
+  #footer-wrapper.row
+    #footer-inner.side-shadow
       .footer-content
         %ul.footer-nav
-          %li= link_to "Home", ""
-          %li= link_to "Services", ""
-          %li= link_to "About Us", ""
-          %li= link_to "Policies", ""
-          %li= link_to "Resources", ""
-          %li= link_to "Contact", ""
+          %li= link_to "Home", root_path
+          %li= link_to "Services", services_path
+          %li= link_to "About Us", about_us_path
+          %li= link_to "Policies", policies_path
+          %li= link_to "Resources", resources_path
+          %li= link_to "Contact", contact_path
           %li= link_to "Site Map", ""
         %p
           %small
@@ -16,7 +16,7 @@
             Copywrite 2015
             Web Design by Veridian Rising
             All Rights Reserved
-        %section#cred-logos
+        #cred-logos
           %ul
             %li= link_to image_tag("flfa_logo.png")
             %li= link_to image_tag("ndgaa_logo.png")

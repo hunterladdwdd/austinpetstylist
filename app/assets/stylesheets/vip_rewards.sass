@@ -1,69 +1,38 @@
-section#vip-rewards
-  .up-separator
-    width: 960px
-    margin: 0 auto
-  #vip-rewards-content
-    width: 960px
-    margin: 0 auto
-    padding: 20px 10px 0px
-    background-color: #f5f5f5
-    .vip-rewards-wrapper
-      margin-bottom: 20px
+#vip-rewards
+  .content-container
     article
       z-index: 200
-      margin-bottom: 20px
-      padding: 20px 10px 30px
+      padding: 15px 15px 63px 15px
       background-color: #fff
       position: relative
       border: 4px ridge #C56182
       h1
-        font-size: 30px
-        color: #3c80bf
-        font-family: "ThirstyRoughReg"
-        padding-bottom: 20px
         span
           letter-spacing: 3px
       h2
-        font-size: 22px
-        color: #3c80bf
-        font-family: "Solano Gothic MVB Medium"
-        padding-bottom: 20px
-      p
-        margin-bottom: 10px
-        font-family: "Verdana", sans-serif
-        font-size: 16px
-        color: #777
-        clear: both
+        width: 50%
       img
         position: absolute
         float: right
         top: -2px
         right: 0
         margin: 0px
-      blockquote
-        font-size: 16px
-        font-weight: normal
-        font-style: italic
-        padding: 15px
-        margin-bottom: 20px
-        border-left: 5px solid #c56182
-        width: 66%
-        color: #777
       ul
         width: 63%
         li
-          font-family: "Verdana"
-          font-size: 14px
-          line-height: 1.5em
           color: #777
           list-style-type: square
           margin: 0 0 20px 30px
           > span
             font-weight: bold
             text-transform: uppercase
-            color: #444
-          p
-            font-family: "Verdana", sans-serif
             color: #000
-            font-size: 16px
-            padding-bottom: 20px
+
+@media (max-width: 768px)
+  #vip-rewards
+    .content-container
+      article
+        img
+          display: none
+        h2
+          width: 100%
