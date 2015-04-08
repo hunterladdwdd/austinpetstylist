@@ -8,14 +8,15 @@ class TestimonialsController < ApplicationController
 
   def create
     @testimonial = Testimonial.new(testimonial_params)
-    @testimonial.user_id = current_user.id
+    @testimonial.user = current_user
+    binding.pry
 
     if @testimonial.save
       flash[:notice] = "You've added a new testimonial!"
       redirect_to root_path
     else
       flash[:error] = "You forgot either the client name, or what they said!"
-      render_template :new
+      render :new
     end
   end
 
@@ -40,7 +41,7 @@ class TestimonialsController < ApplicationController
   private
 
   def testimonial_params
-    params.require(:testimonial).permit(:body, :client, :user_id)
+    params.require(:testimonial).permit(:client, :body)
   end
 
   def set_testimonial
