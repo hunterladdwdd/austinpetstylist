@@ -9,7 +9,6 @@ class TestimonialsController < ApplicationController
   def create
     @testimonial = Testimonial.new(testimonial_params)
     @testimonial.user = current_user
-    binding.pry
 
     if @testimonial.save
       flash[:notice] = "You've added a new testimonial!"
