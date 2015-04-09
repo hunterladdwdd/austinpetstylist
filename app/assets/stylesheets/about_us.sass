@@ -1,16 +1,17 @@
 #about-us
   article
-    img
-      float: right
-      position: relative
-      top: -20px
-      z-index: 100000
-    img.profile
+    .photo
       position: absolute
       top: -10px
       right: -10px
       margin: 0px
       z-index: 5
+      width: 100%
+    .name
+      float: right
+      position: relative
+      top: -20px
+      z-index: 100000
   .content-container.special
     padding: 10px
   .special-format
@@ -23,17 +24,36 @@
         h1
           border-top: 5px ridge #c56182
           border-bottom: 5px groove #c56182
-          padding: 10px 0 15px
+          padding: 15px
+          margin-bottom: 30px
 
 @media (min-width: 768px)
-  .container
-    #about-us
-      .up-separator
-        width: 100%
-        img
-          width: 100%
-      .wide-box
-        width: 100%
+  #about-us
+    article
+      .photo
+        top: 0
+        right: 0
+      .name
+        top: 0
+        right: -15px
+
+@media (min-width: 992px)
+  #about-us
+    article
+      .photo
+        top: -15px
+      .name
+        top: 15px
+
+@media (min-width: 1200px)
+  #about-us
+    article
+      .photo
+        top: 0
+        right: 0
+      .name
+        top: 25px
+        right: 25px
 
 @media (max-device-width: 568px)
   .container

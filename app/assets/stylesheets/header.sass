@@ -47,54 +47,20 @@
       img
         width: 100%
 
-@media (max-device-width: 1024px)
-  .aps-main-nav
-    .container
-      .navbar-header
-        #header-logo
-          margin: 15px auto
-          width: 600px
-
-@media (min-width: 1200px)
-  .aps-main-nav
-    .container
-      .aps-navbar-collapse
-        .nav
-          font-size: 1.36499em
-
-@media (max-width: 768px)
+@media (max-device-width: 568px)
   .aps-main-nav
     .container
       .navbar-header
         #aps-logo-text
-          display: block
           float: left
           font-family: "ThirstyRoughReg"
-          font-size: 2em
+          font-size: 16px
           color: #3C80BF
-          margin: 10px 0 5px 5px
-      .aps-navbar-collapse
-        .nav
-          li
-            a
-              font-size: 1.225em
+          margin: 15px 0 5px 20px
+        #aps-logo-text
+          display: block
       #social-media
-        top: 10px
-        right: 0
-        ul
-          li
-            margin-right: 10px
-            img
-              width: 30px
-              height: 30px
-          li:hover
-            border: none
-            padding: 0
-            margin-top: 0
-          li:last-child:hover
-            margin-left: 0
-      .down-separator
-        display: none
+        right: 55px
 
 @media (max-device-width: 600px)
   .aps-main-nav
@@ -132,20 +98,48 @@
       .down-separator
         display: none
 
-@media (max-device-width: 568px)
+@media (max-device-width: 667px)
+  .aps-main-nav
+    .container
+      .navbar-header
+        .aps-logo-text
+          margin-left: 15px
+      #social-media
+        right: 55px
+
+@media (max-width: 768px)
   .aps-main-nav
     .container
       .navbar-header
         #aps-logo-text
+          display: block
           float: left
           font-family: "ThirstyRoughReg"
-          font-size: 16px
+          font-size: 2em
           color: #3C80BF
-          margin: 15px 0 5px 20px
-        #aps-logo-text
-          display: block
+          margin: 10px 0 5px 15px
+      .aps-navbar-collapse
+        .nav
+          li
+            a
+              font-size: 1em
       #social-media
-        right: 55px
+        top: 10px
+        right: 0px
+        ul
+          li
+            margin-right: 10px
+            img
+              width: 30px
+              height: 30px
+          li:hover
+            border: none
+            padding: 0
+            margin-top: 0
+          li:last-child:hover
+            margin-left: 0
+      .down-separator
+        display: none
 
 @media (max-width: 320px)
   .aps-main-nav
@@ -186,3 +180,18 @@
           margin-top: 5px
       .down-separator
         display: none
+
+@media (max-device-width: 1024px)
+  .aps-main-nav
+    .container
+      .navbar-header
+        #header-logo
+          margin: 15px auto
+          width: 600px
+
+@media (min-width: 1200px)
+  .aps-main-nav
+    .container
+      .aps-navbar-collapse
+        .nav
+          font-size: 1.335em
