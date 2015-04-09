@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def home
-    @testimonials = Testimonial.all
+    @testimonials = Testimonial.last(3)
   end
 
   def services; end

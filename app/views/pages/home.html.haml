@@ -1,9 +1,9 @@
 .container
-  #services.row
+  #home.row
     .up-separator
       = image_tag("shadow_up.png")
-    #services-content
-      .home-service-box
+    .content-container
+      .col-xs-12.col-md-4.home-service-box
         %article
           %header
             %h1 Grooming
@@ -15,7 +15,7 @@
             ation that you come in here and let me shear 
             your puppy!
           = link_to "Read More", services_path(:anchor => "grooming"), class: "button-pill"
-      .home-service-box
+      .col-xs-12.col-md-4.home-service-box
         %article
           %header
             %h1 The Extras
@@ -27,7 +27,7 @@
             ation that you come in here and let me shear 
             your puppy!
           = link_to "Read More", services_path(:anchor => "the-extras"), class: "button-pill"
-      .home-service-box#last-service
+      .col-xs-12.col-md-4.home-service-box#last-service
         %article
           %header
             %h1 Other Services
@@ -41,31 +41,31 @@
           = link_to "Read More", services_path(:anchor => "other-services"), class: "button-pill"
       .up-separator
         = image_tag("shadow_up.png")
-  #reviews.row
-    #reviews-content.side-shadow
-      #testimonials
-        %header
-          %h1 What people are saying
-        - @testimonials.each do |testimonial|
+    .content-container#reviews
+      .side-shadow
+        #testimonials.col-xs-12.col-md-6.col-lg-9
+          %header
+            %h1 What people are saying
+          - @testimonials.each do |testimonial|
+            %article
+              %p.testimonial
+                = testimonial.preview
+              %p.text-right 
+                = link_to "#{testimonial.client}", testimonial_path(testimonial.id)
+        #yelp.col-xs-12.col-md-6.col-lg-3
+          %header
+            %h1 Yelp
           %article
-            %p.testimonial
-              = testimonial.preview
-            %p.text-right 
-              = link_to "#{testimonial.client}", testimonial_path(testimonial.id)
-      #yelp
-        %header
-          %h1 Yelp
-        %article
-          %p.reviewer.pull-left Kat R.
-          %p.rating.pull-right 4.5 / 5.0
-          %p.clearfix What a fantastic person!
-        %article
-          %p.reviewer.pull-left Kat R.
-          %p.rating.pull-right 4.5 / 5.0
-          %p.clearfix What a fantastic person!
-        %article
-          %p.reviewer.pull-left Kat R.
-          %p.rating.pull-right 4.5 / 5.0
-          %p.clearfix What a fantastic person!
-      .up-separator
-        = image_tag("shadow_up.png")
+            %p.reviewer.pull-left Kat R.
+            %p.rating.pull-right 4.5 / 5.0
+            %p.clearfix What a fantastic person!
+          %article
+            %p.reviewer.pull-left Kat R.
+            %p.rating.pull-right 4.5 / 5.0
+            %p.clearfix What a fantastic person!
+          %article
+            %p.reviewer.pull-left Kat R.
+            %p.rating.pull-right 4.5 / 5.0
+            %p.clearfix What a fantastic person!
+        .up-separator
+          = image_tag("shadow_up.png")
