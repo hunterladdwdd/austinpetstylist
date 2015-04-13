@@ -7,7 +7,7 @@ class TestimonialsController < ApplicationController
   end
 
   def create
-    @user = User.find(params[:user_id])
+    @user = User.find(session[:user_id])
     @testimonial = @user.testimonials.new(testimonial_params)
     @testimonial.user = current_user
 
