@@ -11,5 +11,6 @@
             = @testimonial.body
           - if logged_in?
             = link_to "Edit this testimonial", edit_testimonial_path, class: "btn btn-default"
+          .clear
       .up-separator
         = image_tag("shadow_up.png")
