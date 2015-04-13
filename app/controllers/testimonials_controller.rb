@@ -40,7 +40,7 @@ class TestimonialsController < ApplicationController
   private
 
   def testimonial_params
-    params.require(:testimonial).permit(:client, :body, :user_id)
+    params.require(:testimonial).permit(:client, :body)
   end
 
   def set_testimonial
