@@ -25,7 +25,7 @@ class TestimonialsController < ApplicationController
   end
 
   def update
-    if @testimonial.update
+    if @testimonial.update(testimonial_params)
       flash[:notice] = "You've updated this testimonial!"
       redirect_to root_path
     else
