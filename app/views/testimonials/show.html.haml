@@ -1,14 +1,15 @@
-%section#testimonial.row
-  .up-separator
-    = image_tag("shadow_up.png")
-  %section#testimonial-content
-    %section.testimonial_wrapper.corner-shadow
-      %article
-        %header
-          %h1 This is what #{@testimonial.client} had to say
-        %blockquote
-          = @testimonial.body
-        - if logged_in?
-          = link_to "Edit this testimonial", edit_testimonial_path, class: "btn btn-default"
+.container
+  #testimonial.row
     .up-separator
       = image_tag("shadow_up.png")
+    .content-container
+      .col-md-12.wide-box
+        %article
+          %header
+            %h1 This is what #{@testimonial.client} had to say
+          %blockquote
+            = @testimonial.body
+          - if logged_in?
+            = link_to "Edit this testimonial", edit_testimonial_path, class: "btn btn-default"
+      .up-separator
+        = image_tag("shadow_up.png")
