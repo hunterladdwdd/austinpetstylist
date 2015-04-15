@@ -1,126 +1,9 @@
-.aps-main-nav
-  .container
-    #aps-logo-text
-      display: block
-    .aps-navbar-collapse
-      .nav
-        float: none
-        clear: both
-        margin: 0 0 20px -10px
-        width: 100%
-        li
-          padding: 0
-          width: 100%
-          clear: both
-          float: none
-          a
-            padding: 5px
-            font-size: 14px
-            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
-        li:hover
-          a:hover
-            background: none
-            color: #3C80BF
-    #social-media
-      float: right
-      ul
-        margin-top: 5px
-    .down-separator
-      display: none
-
-@media (max-device-width: 568px)
+@media (min-width: 1200px)
   .aps-main-nav
     .container
-      .navbar-header
-        #aps-logo-text
-          float: left
-          font-family: "ThirstyRoughReg"
-          font-size: 16px
-          color: #3C80BF
-          margin: 15px 0 5px 20px
-        #aps-logo-text
-          display: block
-      #social-media
-        right: 55px
-
-@media (max-device-width: 600px)
-  .aps-main-nav
-    .container
-      .navbar-header
-        #aps-logo-text
-          float: left
-          font-family: "ThirstyRoughReg"
-          font-size: 24px
-          color: #3C80BF
-          margin: 10px 0 5px 5px
-        #aps-logo-text
-          display: block
-          margin-left: 20px
       .aps-navbar-collapse
         .nav
-          float: none
-          clear: both
-          margin: 0
-          width: 100%
-          li
-            padding: 0
-            a
-              padding: 10px
-              font-size: 12px
-              font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
-          li:hover
-            a:hover
-              background: none
-              color: #3C80BF
-      #social-media
-        float: right
-        ul
-          float: left
-      .down-separator
-        display: none
-
-@media (max-device-width: 667px)
-  .aps-main-nav
-    .container
-      .navbar-header
-        .aps-logo-text
-          margin-left: 15px
-      #social-media
-        right: 55px
-
-@media (max-device-width: 768px)
-  .aps-main-nav
-    .container
-      .navbar-header
-        #aps-logo-text
-          display: block
-          float: left
-          font-family: "ThirstyRoughReg"
-          font-size: 1.5em
-          color: #3C80BF
-          margin: 10px 0 5px 15px
-      .aps-navbar-collapse
-        .nav
-          li
-            a
-              font-size: 1em
-      #social-media
-        top: 10px
-        right: 55px
-        ul
-          li
-            margin-right: 10px
-            img
-              width: 30px
-              height: 30px
-          li:hover
-            border: none
-            padding: 0
-            margin-top: 0
-          li:last-child:hover
-            margin-left: 0
-      .down-separator
-        display: none
+          font-size: 1.335em
 
 @media (max-device-width: 1024px)
   .aps-main-nav
@@ -131,7 +14,7 @@
       .navbar-header
         float: none
         #aps-logo-text
-            display: none
+          display: none
         .navbar-toggle
           border-color: #fff
         .navbar-toggle
@@ -172,9 +55,68 @@
         img
           width: 100%
 
-@media (min-width: 1200px)
+@media (max-device-width: 768px)
   .aps-main-nav
     .container
+      .navbar-header
+        #aps-logo-text
+          display: none
       .aps-navbar-collapse
         .nav
-          font-size: 1.335em
+          li
+            a
+              font-size: 1em
+      #social-media
+        top: 10px
+        right: 55px
+
+@media (max-device-width: 667px)
+  .aps-main-nav
+    .container
+      .navbar-header
+        #aps-logo-text
+          margin-left: 15px
+
+@media (max-device-width: 600px)
+  .aps-main-nav
+    .container
+      .navbar-header
+        #aps-logo-text
+          display: block
+      .aps-navbar-collapse
+        .nav
+          float: none
+          clear: both
+          margin: 0
+          width: 100%
+          li
+            padding: 0
+            a
+              padding: 10px
+              font-size: 12px
+          li:hover
+            a:hover
+              background: none
+              color: #3C80BF
+
+.aps-main-nav
+  .container
+    .navbar-header
+      #aps-logo-text
+        display: block
+    .aps-navbar-collapse
+      .nav
+        margin: 0 0 20px -10px
+        li
+          float: none
+    #social-media
+      position: absolute
+      top: 10px
+      right: 60px
+      ul
+        li
+          margin: 0 0 0 10px
+          img
+            width: 30px
+    .down-separator
+      display: none
