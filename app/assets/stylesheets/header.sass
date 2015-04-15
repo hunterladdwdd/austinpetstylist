@@ -1,11 +1,77 @@
-@media (min-width: 1200px)
+.aps-main-nav
+  margin: 0 !important
+  padding: 0
+  border-bottom: 1px solid #000
+  .container
+    .navbar-header
+      #aps-logo-text
+        display: block
+        margin: 15px 0 0 15px
+        float: left
+    .aps-navbar-collapse
+      .nav
+        width: 100%
+        margin: 0
+        padding: 0
+        li
+          float: none
+          a
+            padding: 10px 0
+    #social-media
+      position: absolute
+      top: 10px
+      right: 60px
+      ul
+        float: right
+        li
+          float: right
+          margin: 0 0 0 10px
+          img
+            width: 30px
+    .down-separator
+      display: none
+
+@media (min-device-width: 568px)
   .aps-main-nav
     .container
+      .navbar-header
+        .aps-navbar-collapse
+          .nav
+            li
+              float: left
+
+@media (min-device-width: 768px)
+  .aps-main-nav
+    .container
+      .navbar-header
+        #aps-logo-text
+          display: none
+        #header-logo
+          width: 400px
+          .aps-logo
+            img
+              width: 400px
       .aps-navbar-collapse
         .nav
-          font-size: 1.335em
+          margin: 0 auto 15px
+          padding: 0
+          width: 682px
+          li
+            float: left
+            a
+              font-size: 1em
+      #social-media
+        top: 15px
+        right: 15px
+        ul
+          li
+            margin-left: 15px
+            img
+              width: 100%
+      .down-separator
+        display: block
 
-@media (max-device-width: 1024px)
+@media (min-device-width: 1024px)
   .aps-main-nav
     margin-bottom: 0 !important
     border-bottom: 0
@@ -13,8 +79,6 @@
       position: relative
       .navbar-header
         float: none
-        #aps-logo-text
-          display: none
         .navbar-toggle
           border-color: #fff
         .navbar-toggle
@@ -54,62 +118,3 @@
       .down-separator
         img
           width: 100%
-
-@media (max-device-width: 568px)
-  .aps-main-nav
-    .container
-      .aps-navbar-collapse
-        .nav
-          li
-            float: left
-
-.aps-main-nav
-  .container
-    .navbar-header
-      #aps-logo-text
-        display: block
-        margin-top: 15px
-        margin-left: 15px
-        float: left
-    .aps-navbar-collapse
-      .nav
-        margin: 0 0 20px -10px
-        li
-          float: none
-    #social-media
-      position: absolute
-      top: 10px
-      right: 60px
-      ul
-        li
-          margin: 0 0 0 10px
-          img
-            width: 30px
-    .down-separator
-      display: none
-
-@media (max-device-width: 768px)
-  .aps-main-nav
-    .container
-      .navbar-header
-        #aps-logo-text
-          display: none
-        #header-logo
-          width: 400px
-          .aps-logo
-            img
-              width: 400px
-      .aps-navbar-collapse
-        .nav
-          li
-            float: left
-            a
-              font-size: 1em
-      #social-media
-        top: 15px
-        right: 15px
-        ul
-          li
-            margin-left: 15px
-            img
-              width: 100%
