@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'ui(/:action)', controller: 'ui'
+  post '/search' => 'home#search'
 
   resources :testimonials, only: [:new, :create, :edit, :update, :show]
   resources :sessions, only: [:create]

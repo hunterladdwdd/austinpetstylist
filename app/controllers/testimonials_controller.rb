@@ -38,6 +38,10 @@ class TestimonialsController < ApplicationController
 
   end
 
+  def index
+    @testimonials = Testimonial.all
+  end
+
   private
 
   def testimonial_params

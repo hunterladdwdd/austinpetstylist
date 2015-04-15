@@ -1,0 +1,6 @@
+# Replace <THESE_VALUES> with yours from
+# https://www.yelp.com/developers/manage_api_keys (don't include <brackets>).
+YELP_CONSUMER_KEY=o5X5ghhlkpLH-orpCMc-OQ
+YELP_CONSUMER_SECRET=2guTeCO3PreyOlIPH_6Z1u_1sLs
+YELP_TOKEN=AE6SH5lvLZi1H_6GbFuAGpgmK6ndMt_n
+YELP_TOKEN_SECRET=7cXq-K_Xw6C5paDT5R8Cp1QC11M

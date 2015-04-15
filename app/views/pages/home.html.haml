@@ -55,17 +55,17 @@
         #yelp.col-xs-12.col-md-6.col-lg-3
           %header
             %h1 Yelp
-          %article
-            %p.reviewer.pull-left Kat R.
-            %p.rating.pull-right 4.5 / 5.0
-            %p.clearfix What a fantastic person!
-          %article
-            %p.reviewer.pull-left Kat R.
-            %p.rating.pull-right 4.5 / 5.0
-            %p.clearfix What a fantastic person!
-          %article
-            %p.reviewer.pull-left Kat R.
-            %p.rating.pull-right 4.5 / 5.0
-            %p.clearfix What a fantastic person!
+            %p.pull-left
+              Head to Austin Pet Stylist on Yelp for full reviews
+              = link_to "Take me to Yelp!", @business.url
+            %p.pull-left
+              = "Total Reviews (#{@business.review_count})"
+            %p.pull-right
+              = image_tag(@business.rating_img_url)
+            %article.clear
+              %h2 Latest Yelp Review
+              %p= @business.reviews[0].excerpt
+              %p.pull-left= @business.reviews[0].user.name
+              = image_tag(@business.reviews[0].rating_image_url, class: "pull-right")
         .up-separator
           = image_tag("shadow_up.png")
