@@ -1,80 +1,32 @@
 .aps-main-nav
-  margin-bottom: 0 !important
-  border-bottom: 0
   .container
-    position: relative
-    .navbar-header
-      float: none
-      #aps-logo-text
-          display: block
-      .navbar-toggle
-        border-color: #fff
-      .navbar-toggle
-        .icon-bar
-          background-color: grey
-      #header-logo
-        margin: 20px auto
-        width: 600px
-        .aps-logo
-          margin: 0
-          padding: 0
-          float: none
+    #aps-logo-text
+      display: block
     .aps-navbar-collapse
       .nav
-        margin-bottom: 10px
         float: none
-    .navbar-left
-      position: absolute
-      top: 0
-      left: 0
-    #social-media
-      position: absolute
-      top: 10px
-      right: 55px
-      ul
-        float: left
-        li
-          float: left
-          margin-right: 20px
-        li:hover
-          margin: -10px 10px 0 0
-          padding: 5px
-          border: 5px solid #c56182
-          border-radius: 30px
-        li:last-child:hover
-          margin-left: -10px
-    .down-separator
-      img
+        clear: both
+        margin: 0 0 20px -10px
         width: 100%
-
-@media (max-device-width: 320px)
-  .aps-main-nav
-    .container
-      .aps-navbar-collapse
-        .nav
-          float: none
-          clear: both
-          margin: 0 0 20px -10px
+        li
+          padding: 0
           width: 100%
-          li
-            padding: 0
-            width: 100%
-            clear: both
-            float: none
-            a
-              padding: 5px
-              font-size: 14px
-              font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
-          li:hover
-            a:hover
-              background: none
-              color: #3C80BF
-      #social-media
-        float: right
-        ul
-          margin-top: 5px
-      .down-separator
-        display: none
+          clear: both
+          float: none
+          a
+            padding: 5px
+            font-size: 14px
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+        li:hover
+          a:hover
+            background: none
+            color: #3C80BF
+    #social-media
+      float: right
+      ul
+        margin-top: 5px
+    .down-separator
+      display: none
 
 @media (max-device-width: 568px)
   .aps-main-nav
@@ -171,14 +123,54 @@
         display: none
 
 @media (max-device-width: 1024px)
-  .aps-main-nav
-    .container
-      .navbar-header
-        .aps-logo-text
+.aps-main-nav
+  margin-bottom: 0 !important
+  border-bottom: 0
+  .container
+    position: relative
+    .navbar-header
+      float: none
+      #aps-logo-text
           display: none
-        #header-logo
-          margin: 15px auto
-          width: 600px
+      .navbar-toggle
+        border-color: #fff
+      .navbar-toggle
+        .icon-bar
+          background-color: grey
+      #header-logo
+        margin: 20px auto
+        width: 600px
+        .aps-logo
+          margin: 0
+          padding: 0
+          float: none
+    .aps-navbar-collapse
+      .nav
+        margin-bottom: 10px
+        float: none
+    .navbar-left
+      position: absolute
+      top: 0
+      left: 0
+    #social-media
+      position: absolute
+      top: 10px
+      right: 55px
+      ul
+        float: left
+        li
+          float: left
+          margin-right: 20px
+        li:hover
+          margin: -10px 10px 0 0
+          padding: 5px
+          border: 5px solid #c56182
+          border-radius: 30px
+        li:last-child:hover
+          margin-left: -10px
+    .down-separator
+      img
+        width: 100%
 
 @media (min-width: 1200px)
   .aps-main-nav
