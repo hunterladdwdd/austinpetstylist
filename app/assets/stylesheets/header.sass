@@ -23,8 +23,6 @@
       .nav
         margin-bottom: 10px
         float: none
-        li
-          float: none
     .navbar-left
       position: absolute
       top: 0
@@ -32,7 +30,7 @@
     #social-media
       position: absolute
       top: 20px
-      right: 55px
+      right: -5px
       ul
         float: left
         li
@@ -56,7 +54,7 @@
         #aps-logo-text
           float: left
           font-family: "ThirstyRoughReg"
-          font-size: 1.5em
+          font-size: 16px
           color: #3C80BF
           margin: 15px 0 5px 20px
         #aps-logo-text
@@ -109,7 +107,7 @@
       #social-media
         right: 55px
 
-@media (max-device-width: 768px)
+@media (max-width: 768px)
   .aps-main-nav
     .container
       .navbar-header
@@ -117,7 +115,7 @@
           display: block
           float: left
           font-family: "ThirstyRoughReg"
-          font-size: 1.5em
+          font-size: 2em
           color: #3C80BF
           margin: 10px 0 5px 15px
       .aps-navbar-collapse
@@ -127,7 +125,7 @@
               font-size: 1em
       #social-media
         top: 10px
-        right: 55px
+        right: 0px
         ul
           li
             margin-right: 10px
@@ -143,12 +141,50 @@
       .down-separator
         display: none
 
-@media (max-device-width: 1024px)
+@media (max-width: 320px)
   .aps-main-nav
     .container
       .navbar-header
         #aps-logo-text
-          display: none
+          float: left
+          font-family: "ThirstyRoughReg"
+          font-size: 16px
+          color: #3C80BF
+          margin: 15px 0 5px 10px
+        #aps-logo-text
+          display: block
+      .aps-navbar-collapse
+        .nav
+          float: none
+          clear: both
+          margin: 0 0 20px -10px
+          width: 100%
+          li
+            padding: 0
+            width: 100%
+            clear: both
+            float: none
+            a
+              padding: 5px
+              font-size: 14px
+              font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+          li:hover
+            a:hover
+              background: none
+              color: #3C80BF
+      #social-media
+        float: right
+        top: 5px
+        ul
+          float: left
+          margin-top: 5px
+      .down-separator
+        display: none
+
+@media (max-device-width: 1024px)
+  .aps-main-nav
+    .container
+      .navbar-header
         #header-logo
           margin: 15px auto
           width: 600px
