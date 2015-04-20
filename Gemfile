@@ -10,7 +10,7 @@ gem 'sass-rails'
 gem 'uglifier'
 gem 'turbolinks'
 gem 'jquery-rails'
-gem 'pg' # Postgres
+gem 'pg'
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'bcrypt', '~> 3.1.7'
 gem 'yelp', require: 'yelp'
