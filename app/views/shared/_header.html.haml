@@ -8,12 +8,12 @@
       = link_to image_tag("austinpetstylist_logo.jpg"), root_path, class: "navbar-brand aps-logo hidden-xs"
   %nav.navbar-collapse.collapse{"aria-expanded" => "false", "style" => "height: 1px"}
     %ul.nav.nav-pills
-      %li= link_to "Services", services_path, "data-toggle" => "pill"
-      %li= link_to "About Us", about_us_path, "data-toggle" => "pill"
-      %li= link_to "VIP Rewards", vip_rewards_path, "data-toggle" => "pill"
-      %li= link_to "Policies", policies_path, "data-toggle" => "pill"
-      %li= link_to "Resources & Referrals", resources_path, "data-toggle" => "pill"
-      %li= link_to "Contact", contact_path, "data-toggle" => "pill"
+      %li= link_to "Services", services_path
+      %li= link_to "About Us", about_us_path
+      %li= link_to "VIP Rewards", vip_rewards_path
+      %li= link_to "Policies", policies_path
+      %li= link_to "Resources & Referrals", resources_path
+      %li= link_to "Contact", contact_path
   %ul.nav.navbar-nav.navbar-left.hidden-sm.hidden-xs
     - if !logged_in?
       %li= link_to "Log In", sign_in_path
