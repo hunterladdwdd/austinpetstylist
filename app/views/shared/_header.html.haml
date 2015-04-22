@@ -8,17 +8,17 @@
       = link_to image_tag("austinpetstylist_logo.jpg"), root_path, class: "navbar-brand aps-logo hidden-xs"
   %nav.navbar-collapse.collapse{"aria-expanded" => "false", "style" => "height: 1px"}
     %ul.nav.nav-pills
-      %li{:class => '#{'active' if current_page?(services_path)}'}
+      %li{:class => "#{'active' if current_page?(services_path)}"}
         = link_to "Services", services_path
-      %li{:class => '#{'active' if current_page?(about_us_path)}'}
+      %li{:class => "#{'active' if current_page?(about_us_path)}"}
         = link_to "About Us", about_us_path
-      %li{:class => '#{'active' if current_page?(vip_rewards_path)}'}
+      %li{:class => "#{'active' if current_page?(vip_rewards_path)}"}
         = link_to "VIP Rewards", vip_rewards_path
-      %li{:class => '#{'active' if current_page?(policies_path)}'}
+      %li{:class => "#{'active' if current_page?(policies_path)}"}
         = link_to "Policies", policies_path
-      %li{:class => '#{'active' if current_page?(resources_path)}'}
+      %li{:class => "#{'active' if current_page?(resources_path)}"}
         = link_to "Resources & Referrals", resources_path
-      %li{:class => '#{'active' if current_page?(contact_path)}'}
+      %li{:class => "#{'active' if current_page?(contact_path)}"}
         = link_to "Contact", contact_path
   %ul.nav.navbar-nav.navbar-left.hidden-sm.hidden-xs
     - if !logged_in?
